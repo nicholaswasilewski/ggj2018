@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class pigeon : MonoBehaviour {
 	private Transform transform;
+	private Transform cameraTransform;
 
 	// Use this for initialization
 	void Start () {
 		transform = GetComponent<Transform> ();
+		cameraTransform = GameObject.Find("Main Camera").GetComponent<Transform>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		float forwardSpeed = 0.05f;
-		float sideSpeed = 5f;
+		float forwardSpeed = 1f;
+		float sideSpeed = 50f;
 		float up = 0f;
 		float left = 0f;
 
@@ -29,6 +31,8 @@ public class pigeon : MonoBehaviour {
 		if (Input.GetKey(KeyCode.D)) {
 			left = sideSpeed * Time.deltaTime;
 		}
-		transform.Translate (new Vector3 (left, up, forwardSpeed));
+		Vector3 translation = new Vector3 (left, up, forwardSpeed);
+		transform.Translate(translation);
+		cameraTransform.Translate(translation);
 	}
 }
