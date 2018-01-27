@@ -7,14 +7,20 @@ public class CameraMove : MonoBehaviour {
 	// Use this for initialization
 
 	public float moveSpeed;
-	new Transform transform;
 
 	void Start () {
-		transform = gameObject.transform;
 	}
 
 	void Move(Vector3 move) {
-		transform.Translate (move.normalized * moveSpeed);
+		float moveMagnitude = move.magnitude;
+		if (moveMagnitude > moveSpeed) {
+			moveMagnitude = moveSpeed;
+		}
+
+		if (move.sqrMagnitude > moveSpeed * moveSpeed) {
+			move = move.normalized;
+		}
+		transform.Translate (move.normalized * moveSpeed * Time.deltaTime);
 	}
 	
 	// Update is called once per frame
@@ -22,18 +28,8 @@ public class CameraMove : MonoBehaviour {
 		float vertical = Input.GetAxis ("Vertical");
 		float horizontal = Input.GetAxis ("Horizontal");
 		Vector3 moveVector = Vector3.zero;
-		if (vertical > 1.0f) {
-			moveVector += transform.forward;
-		} else if (vertical < 0.0f) {
-			moveVector -= transform.forward;
-		}
-
-		if (horizontal > 0.0f) {
-			moveVector += transform.right;
-		} else if (horizontal < 0.0f) {
-			moveVector -= transform.right;
-		}
-		Debug.Log (vertical.ToString() + ", " + horizontal.ToString());
+		moveVector += transform.forward*vertical;
+		moveVector += transform.right*horizontal;
 		Move (moveVector);
 	}
 }
