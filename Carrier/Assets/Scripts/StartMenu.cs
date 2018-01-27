@@ -63,12 +63,12 @@ public class StartMenu : MonoBehaviour {
 
     // Yes/No/maybe: A string, a Yes event, a No event and maybe event
     public void StartChoice (string title, UnityAction startEvent, UnityAction aboutEvent) {
-		the_choice = 0;
-		this.startEvent = startEvent;
-		this.aboutEvent = aboutEvent;
-		startMenuObject.SetActive (true);
+				the_choice = 0;
+				this.startEvent = startEvent;
+				this.aboutEvent = aboutEvent;
+				startMenuObject.SetActive (true);
         this.title.text = title;
-        this.iconImage.gameObject.SetActive (false);
+        this.iconImage.gameObject.SetActive (true);
         startButton.gameObject.SetActive (true);
         aboutButton.gameObject.SetActive (true);
     }

@@ -449,8 +449,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   displayText: {fileID: 1743244877}
-  displayTime: 1.5
-  fadeTime: 1
+  displayTime: 1
+  fadeTime: 0.5
 --- !u!114 &439525680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -720,7 +720,7 @@ Prefab:
     - target: {fileID: 224776606315674056, guid: d3b93a4c2992d4e1a95b391b49419c11,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -60
       objectReference: {fileID: 0}
     - target: {fileID: 224776606315674056, guid: d3b93a4c2992d4e1a95b391b49419c11,
         type: 2}
@@ -770,7 +770,7 @@ Prefab:
     - target: {fileID: 224833455420742662, guid: d3b93a4c2992d4e1a95b391b49419c11,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 15
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224833455420742662, guid: d3b93a4c2992d4e1a95b391b49419c11,
         type: 2}
@@ -825,11 +825,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 572720026}
+      objectReference: {fileID: 572720030}
     - target: {fileID: 114898252024854576, guid: d3b93a4c2992d4e1a95b391b49419c11,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TestYMC
+      value: birdSelect
       objectReference: {fileID: 0}
     - target: {fileID: 114898252024854576, guid: d3b93a4c2992d4e1a95b391b49419c11,
         type: 2}
@@ -868,7 +868,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &572720026
+--- !u!114 &572720030
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 572720024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 80df6f851cdee44ad8e65391078b0dde, type: 3}
+  m_Script: {fileID: 11500000, guid: 836debf6992994fc782503a905b06251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &593093423

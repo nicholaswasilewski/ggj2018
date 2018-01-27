@@ -14,22 +14,22 @@ public class StartMenuLogic : MonoBehaviour {
     void Awake () {
         startMenu = StartMenu.Instance ();
         displayManager = DisplayManager.Instance ();
-				
+
         startAction = new UnityAction (StartFunction);
       	aboutAction = new UnityAction (AboutFunction);
 		StartThings ();
     }
 
 	public void StartThings () {
-		startMenu.StartChoice ("Title Here", startAction, aboutAction);
-		//      modalPanel.Choice ("Would you like a poke in the eye?\nHow about with a sharp stick?", myYesAction, myNoAction, myMaybeAction);
+		startMenu.StartChoice ("Dating is for the Birds", startAction, aboutAction);
 	}
 
 
     //  These are wrapped into UnityActions
     void StartFunction () {
       // Logic for starting game here
-        displayManager.DisplayMessage ("Starting game");
+        displayManager.DisplayMessage ("Starting on your bird journey");
+		Application.LoadLevel("Main");
     }
 
     void AboutFunction () {
