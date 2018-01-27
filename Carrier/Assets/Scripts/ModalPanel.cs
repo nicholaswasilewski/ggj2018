@@ -3,7 +3,6 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 using System.Collections;
 
-//  This script will be updated in Part 2 of this 2 part series.
 public class ModalPanel : MonoBehaviour {
 
     public Text question;
@@ -33,55 +32,60 @@ public class ModalPanel : MonoBehaviour {
         return modalPanel;
     }
 
-		void Update() {
-			if (Input.GetKeyDown(KeyCode.LeftArrow)){
-				if (the_choice > 0 && the_choice <= 2 ){
-					the_choice = the_choice - 1;
-				}
-			}
-			if (Input.GetKeyDown(KeyCode.RightArrow)){
-				if (the_choice >= 0 && the_choice < 2 ){
-					the_choice = the_choice + 1;
-				}
-			}
-			if (the_choice == 0 ){
-				yesHighlightObject.gameObject.SetActive (true);
-				noHighlightObject.gameObject.SetActive (false);
-				maybeHighlightObject.gameObject.SetActive (false);
-			} else if (the_choice == 1){
-				yesHighlightObject.gameObject.SetActive (false);
-				noHighlightObject.gameObject.SetActive (true);
-				maybeHighlightObject.gameObject.SetActive (false);
-			}
-			else{
-				yesHighlightObject.gameObject.SetActive (false);
-				noHighlightObject.gameObject.SetActive (false);
-				maybeHighlightObject.gameObject.SetActive (true);
-			}
-			if (Input.GetKeyDown(KeyCode.Return)) {
-				//activate selection
-					Debug.Log(the_choice);
-					if (the_choice == 0 ){
-						yesEvent();
-					}
-					if (the_choice == 1){
-						noEvent();
-					}
-					if (the_choice == 2){
-						maybeEvent();
-					}
-					ClosePanel();
+	void Update() {
+		if (Input.GetKeyDown(KeyCode.LeftArrow)){
+			if (the_choice > 0 && the_choice <= 2 ){
+				the_choice = the_choice - 1;
 			}
 		}
+		if (Input.GetKeyDown(KeyCode.RightArrow)){
+			if (the_choice >= 0 && the_choice < 2 ){
+				the_choice = the_choice + 1;
+			}
+		}
+		if (the_choice == 0 ){
+			yesHighlightObject.gameObject.SetActive (true);
+			noHighlightObject.gameObject.SetActive (false);
+			maybeHighlightObject.gameObject.SetActive (false);
+		} else if (the_choice == 1){
+			yesHighlightObject.gameObject.SetActive (false);
+			noHighlightObject.gameObject.SetActive (true);
+			maybeHighlightObject.gameObject.SetActive (false);
+		}
+		else{
+			yesHighlightObject.gameObject.SetActive (false);
+			noHighlightObject.gameObject.SetActive (false);
+			maybeHighlightObject.gameObject.SetActive (true);
+		}
+		if (Input.GetKeyDown(KeyCode.Return)) {
+			//activate selection
+			Debug.Log(the_choice);
+			if (the_choice == 0 ){
+				yesEvent();
+			}
+			if (the_choice == 1){
+				noEvent();
+			}
+			if (the_choice == 2){
+				maybeEvent();
+			}
+			ClosePanel();
+		}
+	}
 
     // Yes/No/maybe: A string, a Yes event, a No event and maybe event
-    public void Choice (string question, UnityAction yesEvent, UnityAction noEvent, UnityAction maybeEvent) {
-				the_choice = 0;
-				this.yesEvent = yesEvent;
-				this.noEvent = noEvent;
-				this.maybeEvent = maybeEvent;
-				modalPanelObject.SetActive (true);
-        this.question.text = question;
+    public void Choice (Conversation theConversation, UnityAction yesEvent,
+		UnityAction noEvent, UnityAction maybeEvent
+		) {
+		the_choice = 0;
+		this.yesEvent = yesEvent;
+		this.noEvent = noEvent;
+		this.maybeEvent = maybeEvent;
+		modalPanelObject.SetActive (true);
+		this.question.text = theConversation.Question;
+		yesButton.gameObject.GetComponentsInChildren<UnityEngine.UI.Text> () [0].text = theConversation.Answer1;
+		noButton.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer2;
+		maybeButton.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer3;
         this.iconImage.gameObject.SetActive (false);
         yesButton.gameObject.SetActive (true);
         noButton.gameObject.SetActive (true);
