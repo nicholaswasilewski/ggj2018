@@ -18,9 +18,9 @@ public class CameraMove : MonoBehaviour {
 		}
 
 		if (move.sqrMagnitude > moveSpeed * moveSpeed) {
-			move = move.normalized;
+			move = move.normalized*moveSpeed;
 		}
-		transform.Translate (move.normalized * moveSpeed * Time.deltaTime);
+        transform.Translate(move.normalized * moveSpeed * Time.deltaTime, Space.World);
 	}
 	
 	// Update is called once per frame
