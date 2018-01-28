@@ -11,6 +11,8 @@ public class Flock : MonoBehaviour {
 	private float tiltSpeed = 100f;
 	private float maxTilt = 20f;
 
+	private float maxHeight = 150f;
+
 	private const KeyCode LeftKey = KeyCode.A;
 	private const KeyCode RightKey = KeyCode.D;
 	private const KeyCode UpKey = KeyCode.W;
@@ -141,11 +143,15 @@ public class Flock : MonoBehaviour {
 		if (!rolling)
 			tiltTransform.localEulerAngles = new Vector3 (targetTilt.x, 0, targetTilt.z);
 
-		// Move flock and reset camera
-		transform.Translate(new Vector3(left * translateSpeed * Time.deltaTime, up * translateSpeed * Time.deltaTime, -100f * Time.deltaTime));
-		Vector3 cameraPosition = cameraTransform.position;
-		cameraPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z + 25);
-		cameraTransform.position = cameraPosition;
-//		cameraTransform.forward = (transform.position - cameraTransform.position);
+		// Move the flock, limiting it to a max height
+		Vector3 newPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
+		newPosition.x += left * translateSpeed * Time.deltaTime;
+		newPosition.y += up * translateSpeed * Time.deltaTime;
+		newPosition.y = Mathf.Min(newPosition.y, maxHeight);
+		newPosition.z += -100f * Time.deltaTime;
+		transform.position = newPosition;
+
+		// Camera follows flock
+		cameraTransform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 25);;
 	}
 }
