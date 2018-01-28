@@ -5,7 +5,7 @@ using UnityEngine;
 public class SaucyBird : MonoBehaviour {
 
 	public int BirdNumber;
-	public UnityEngine.UI.Image Portrait;
+	public Texture2D Portrait;
 
 	void Start () {
 	}
@@ -18,6 +18,6 @@ public class SaucyBird : MonoBehaviour {
 	}
 
 	public void StartDialogue(){
-		ModalLogic.Instance.birdSelect (BirdNumber);
+		ModalLogic.Instance.birdSelect (BirdNumber, Portrait);
 	}
 }

@@ -54,7 +54,6 @@ public class GameStats {
 		for (int i = 0; i < BirdsToSeduce; i++) {
 			Birds [i] = new BirdState ();
 			Birds [i].alive = true;
-			Birds [i].seduced = true;
 		}
 
 		return Birds;

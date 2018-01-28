@@ -45,8 +45,8 @@ public class Conversation {
 		{
 		case 1:
 		  // Turkey
-			switch (convoNum) 
-			{ 
+			switch (convoNum)
+			{
 			case 1:
 				con = new Conversation ("Turkey: What kind of jokes do you like?", "Ones that bowl me over.", "Dry humor.", "Slapstick", 1);
 				break;
@@ -60,7 +60,7 @@ public class Conversation {
 			break;
 		case 2:
 		// Eagle
-			switch (convoNum) { 
+			switch (convoNum) {
 			case 1:
 				con = new Conversation ("Eagle: ROW! GAIN!", "GET! SWOLE!", "Nah, you don’t need that stuff.", "But I’m le tired.", 2);
 				break;
