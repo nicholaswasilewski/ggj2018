@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resetKey: 32
+  destinationScene: title
 --- !u!4 &154943451
 Transform:
   m_ObjectHideFlags: 0

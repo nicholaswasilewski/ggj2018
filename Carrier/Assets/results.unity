@@ -982,7 +982,7 @@ MonoBehaviour:
   - {fileID: 1766792199}
   - {fileID: 167209754}
   - {fileID: 1903556293}
-  timePerStatus: 1
+  timePerStatus: 0.25
 --- !u!1 &1766792197
 GameObject:
   m_ObjectHideFlags: 0
