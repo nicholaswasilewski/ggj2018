@@ -5,7 +5,7 @@ using UnityEngine;
 public class Flock : MonoBehaviour {
 	private Transform cameraTransform;
 	private Transform tiltTransform;
-	public MeshRenderer[] birds = new MeshRenderer[7];
+	public GameObject[] birds = new GameObject[7];
 
 	private float translateSpeed = 100f;
 	private float tiltSpeed = 100f;
@@ -36,7 +36,7 @@ public class Flock : MonoBehaviour {
 		BirdState[] birdStats = gameStats.Birds;
 		for (int i = 0; i < birdStats.Length; i++) {
 			BirdState birdState = birdStats[i];
-			birds[i+1].enabled = birdState.alive && birdState.seduced;
+			birds[i+1].active = birdState.alive && birdState.seduced;
 		}
 	}
 
