@@ -920,6 +920,11 @@ Prefab:
       propertyPath: musicClip
       value: 
       objectReference: {fileID: 8300000, guid: eda55b5bdf3ff4551af8c2026c588322, type: 3}
+    - target: {fileID: 114123876830466254, guid: 28471a1912a494faea0e5d6a6826e4e5,
+        type: 2}
+      propertyPath: squawk
+      value: 
+      objectReference: {fileID: 8300000, guid: 6d68acf37e2a745f285786ed4f296e87, type: 3}
     m_RemovedComponents:
     - {fileID: 65893964472567530, guid: 28471a1912a494faea0e5d6a6826e4e5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 28471a1912a494faea0e5d6a6826e4e5, type: 2}
@@ -2962,6 +2967,11 @@ Prefab:
       propertyPath: musicClip
       value: 
       objectReference: {fileID: 8300000, guid: c3f151db5e9b546b2bad91baa929f270, type: 3}
+    - target: {fileID: 114373069080857016, guid: 855a1212783b4493f91450dc1e80b9db,
+        type: 2}
+      propertyPath: squawk
+      value: 
+      objectReference: {fileID: 8300000, guid: c92dd6ab06a484eaebb6f67ce30b00d0, type: 3}
     m_RemovedComponents:
     - {fileID: 65540601851015526, guid: 855a1212783b4493f91450dc1e80b9db, type: 2}
     - {fileID: 64823823273586894, guid: 855a1212783b4493f91450dc1e80b9db, type: 2}
@@ -3491,6 +3501,11 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -169.94801
       objectReference: {fileID: 0}
+    - target: {fileID: 114224510291304158, guid: ca03ed9aa571c40babd78933e450aeb1,
+        type: 2}
+      propertyPath: squawk
+      value: 
+      objectReference: {fileID: 8300000, guid: 556e64a9d2844455684af755649affaa, type: 3}
     m_RemovedComponents:
     - {fileID: 65577539871327186, guid: ca03ed9aa571c40babd78933e450aeb1, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ca03ed9aa571c40babd78933e450aeb1, type: 2}
@@ -4590,6 +4605,11 @@ Prefab:
       propertyPath: musicClip
       value: 
       objectReference: {fileID: 8300000, guid: eda55b5bdf3ff4551af8c2026c588322, type: 3}
+    - target: {fileID: 114266518282818786, guid: 9e18dcb8373cc42d5929ae254b99c294,
+        type: 2}
+      propertyPath: squawk
+      value: 
+      objectReference: {fileID: 8300000, guid: eb9f8116ec93d4fed832ed5472202182, type: 3}
     m_RemovedComponents:
     - {fileID: 65984453320621344, guid: 9e18dcb8373cc42d5929ae254b99c294, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 9e18dcb8373cc42d5929ae254b99c294, type: 2}
@@ -8432,6 +8452,11 @@ Prefab:
       propertyPath: musicClip
       value: 
       objectReference: {fileID: 8300000, guid: eda55b5bdf3ff4551af8c2026c588322, type: 3}
+    - target: {fileID: 114420658202327974, guid: 205ec923489b84ed2ab349788edbc73c,
+        type: 2}
+      propertyPath: squawk
+      value: 
+      objectReference: {fileID: 8300000, guid: 04c709264b4ab41a78b5c5c6e00b0557, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 205ec923489b84ed2ab349788edbc73c, type: 2}
   m_IsPrefabParent: 0
@@ -8746,6 +8771,11 @@ Prefab:
       propertyPath: musicClip
       value: 
       objectReference: {fileID: 8300000, guid: c3f151db5e9b546b2bad91baa929f270, type: 3}
+    - target: {fileID: 114251954127329304, guid: 8bd1d1a2a39024757a73af0e70ec511c,
+        type: 2}
+      propertyPath: squawk
+      value: 
+      objectReference: {fileID: 8300000, guid: 81cceeb8a532148a3bdb1da1f8bdb079, type: 3}
     m_RemovedComponents:
     - {fileID: 64669809508970998, guid: 8bd1d1a2a39024757a73af0e70ec511c, type: 2}
     - {fileID: 65054693604494632, guid: 8bd1d1a2a39024757a73af0e70ec511c, type: 2}

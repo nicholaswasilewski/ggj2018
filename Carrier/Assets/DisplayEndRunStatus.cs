@@ -6,6 +6,8 @@ public class DisplayEndRunStatus : MonoBehaviour {
 
 	public UnityEngine.UI.Text runTitle;
 	public UnityEngine.UI.Text[] birdStatusDisplay;
+	public AudioClip[] birdSounds;
+	public AudioSource source;
 
 	public float timePerStatus;
 	private int statusCount;
@@ -46,6 +48,7 @@ public class DisplayEndRunStatus : MonoBehaviour {
 			if (!bs.alive) {
 				state = "Dead";
 			}
+			source.PlayOneShot(birdSounds[statusCount]);
 			birdStatusDisplay [statusCount].text = ((BirdType)(statusCount+1)).ToString () + ": " + state;
 			statusCount += 1;
 		}
