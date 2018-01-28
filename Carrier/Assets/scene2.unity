@@ -2289,7 +2289,7 @@ GameObject:
   - component: {fileID: 375774249}
   - component: {fileID: 375774248}
   - component: {fileID: 375774250}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Bird1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3116,7 +3116,7 @@ GameObject:
   - component: {fileID: 559391461}
   - component: {fileID: 559391460}
   - component: {fileID: 559391462}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Bird2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3575,7 +3575,7 @@ GameObject:
   - component: {fileID: 674693642}
   - component: {fileID: 674693641}
   - component: {fileID: 674693643}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Bird5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3821,7 +3821,7 @@ GameObject:
   - component: {fileID: 691560396}
   - component: {fileID: 691560395}
   - component: {fileID: 691560397}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Bird6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4130,7 +4130,7 @@ GameObject:
   - component: {fileID: 887875295}
   - component: {fileID: 887875294}
   - component: {fileID: 887875296}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Bird3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7498,7 +7498,7 @@ GameObject:
   - component: {fileID: 1871291563}
   - component: {fileID: 1871291562}
   - component: {fileID: 1871291564}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Bird4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
