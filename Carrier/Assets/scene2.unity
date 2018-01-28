@@ -1088,6 +1088,10 @@ Prefab:
       propertyPath: m_Name
       value: Bird3Wren
       objectReference: {fileID: 0}
+    - target: {fileID: 1142390790003578, guid: d26d26e6e3f8f43d39d53c920d240e19, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d26d26e6e3f8f43d39d53c920d240e19, type: 2}
   m_IsPrefabParent: 0
@@ -3776,6 +3780,10 @@ Prefab:
       propertyPath: m_Name
       value: Bird2Eagle
       objectReference: {fileID: 0}
+    - target: {fileID: 1789497849105008, guid: 8f39a2821e9d44a48af65a7803ce2cbe, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8f39a2821e9d44a48af65a7803ce2cbe, type: 2}
   m_IsPrefabParent: 0
@@ -4425,6 +4433,10 @@ Prefab:
     - target: {fileID: 4946474726833162, guid: ad9b3b9f76e4e4930bb260ef63a840e6, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1381543703463222, guid: ad9b3b9f76e4e4930bb260ef63a840e6, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ad9b3b9f76e4e4930bb260ef63a840e6, type: 2}
@@ -6676,6 +6688,10 @@ Prefab:
       propertyPath: m_Name
       value: Bird4Parrot
       objectReference: {fileID: 0}
+    - target: {fileID: 1314160246870324, guid: f9de3a0f2509e4a1fbff93513a98495d, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f9de3a0f2509e4a1fbff93513a98495d, type: 2}
   m_IsPrefabParent: 0
@@ -7633,7 +7649,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 4ad076333633344eb8eabfed7e39e42f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bdb0b6b19a4ac458c9dcb0a4a31fa0c6, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -7927,6 +7943,10 @@ Prefab:
       propertyPath: m_Name
       value: Bird6Emu
       objectReference: {fileID: 0}
+    - target: {fileID: 1680044099210152, guid: 3f1a4e0b984d547d287b3e2dbf398caf, type: 2}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3f1a4e0b984d547d287b3e2dbf398caf, type: 2}
   m_IsPrefabParent: 0
@@ -8173,6 +8193,10 @@ Prefab:
     - target: {fileID: 4666157353801484, guid: 8e9d372f48eb245759309a21483c6528, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1180734762247854, guid: 8e9d372f48eb245759309a21483c6528, type: 2}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8e9d372f48eb245759309a21483c6528, type: 2}
@@ -8947,6 +8971,11 @@ Prefab:
       propertyPath: button3
       value: 
       objectReference: {fileID: 1680999395}
+    - target: {fileID: 114655937644352936, guid: ef229e3b0d73c44aabbfa4d1b794a447,
+        type: 2}
+      propertyPath: flock
+      value: 
+      objectReference: {fileID: 1023150049}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef229e3b0d73c44aabbfa4d1b794a447, type: 2}
   m_IsPrefabParent: 0
