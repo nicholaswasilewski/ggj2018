@@ -63,4 +63,8 @@ public class GameStats {
 	public void KillBird(BirdType birdType) {
 		Birds [(int)birdType - 1].alive = false;
 	}
+
+	public void SetBirdSeduction(int birdNumber, bool seductionState) {
+		Birds [birdNumber - 1].seduced = seductionState;
+	}
 }
