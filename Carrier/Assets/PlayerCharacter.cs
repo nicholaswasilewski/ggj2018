@@ -27,6 +27,8 @@ public class PlayerCharacter : MonoBehaviour {
 			ScreenFader.Instance.SetColor (Color.red);
 			ScreenFader.Instance.fadeTime = 0;
 			ScreenFader.Instance.FadeOut ();
+
+			UnityEngine.SceneManagement.SceneManager.LoadScene ("gameover");
 		}
 	}
 }
