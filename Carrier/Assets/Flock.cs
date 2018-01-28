@@ -7,7 +7,8 @@ public class Flock : MonoBehaviour {
 	private Transform tiltTransform;
 	public GameObject[] birds = new GameObject[7];
 
-	private float translateSpeed = 100f;
+	public float forwardSpeed = -100f;
+	private float sideSpeed = 100f;
 	private float tiltSpeed = 100f;
 	private float maxTilt = 20f;
 
@@ -145,10 +146,10 @@ public class Flock : MonoBehaviour {
 
 		// Move the flock, limiting it to a max height
 		Vector3 newPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z);
-		newPosition.x += left * translateSpeed * Time.deltaTime;
-		newPosition.y += up * translateSpeed * Time.deltaTime;
+		newPosition.x += left * sideSpeed * Time.deltaTime;
+		newPosition.y += up * sideSpeed * Time.deltaTime;
 		newPosition.y = Mathf.Min(newPosition.y, maxHeight);
-		newPosition.z += -100f * Time.deltaTime;
+		newPosition.z += forwardSpeed * Time.deltaTime;
 		transform.position = newPosition;
 
 		// Camera follows flock
