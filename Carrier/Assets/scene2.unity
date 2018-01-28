@@ -6884,7 +6884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e590037b4d7064bc88c32f805a279e44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  birdType: 0
+  birdType: 4
 --- !u!54 &1656803361
 Rigidbody:
   m_ObjectHideFlags: 0
