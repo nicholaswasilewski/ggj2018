@@ -17,7 +17,11 @@ public class ModalLogic : MonoBehaviour {
     private UnityAction myNoAction;
     private UnityAction myMaybeAction;
 
+	public Flock flock;
+
 	public static ModalLogic Instance;
+
+
 	int theScore = 0;
 
     void Awake () {
@@ -70,6 +74,7 @@ public class ModalLogic : MonoBehaviour {
 		default:
 			GameStats.Instance.SetBirdSeduction (theConversation.BirdNum, theScore >= 3);
 			modalPanel.ClosePanel ();
+			flock.InitFlock (GameStats.Instance);
 			break;
 		}
 	}

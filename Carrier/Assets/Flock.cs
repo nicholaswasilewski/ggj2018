@@ -35,7 +35,7 @@ public class Flock : MonoBehaviour {
 		InitFlock (GameStats.Instance);
 	}
 
-	void InitFlock(GameStats gameStats) {
+	public void InitFlock(GameStats gameStats) {
 		BirdState[] birdStats = gameStats.Birds;
 		for (int i = 0; i < birdStats.Length; i++) {
 			BirdState birdState = birdStats[i];
