@@ -6,14 +6,14 @@ using System.Collections;
 public class ModalPanel : MonoBehaviour {
 
     public Text question;
-    public Image iconImage;
+	public RawImage iconImage;
     public Button button1;
     public Button button2;
     public Button button3;
     public GameObject modalPanelObject;
-		public GameObject yesHighlightObject;
-		public GameObject noHighlightObject;
-		public GameObject maybeHighlightObject;
+	public GameObject yesHighlightObject;
+	public GameObject noHighlightObject;
+	public GameObject maybeHighlightObject;
 
 	bool isLastTime = false;
 		int the_choice = 0;
@@ -102,7 +102,6 @@ public class ModalPanel : MonoBehaviour {
 			button2.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer2;
 			button3.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer3;
 			response = theConversation.CorrectAnswer;
-			this.iconImage.gameObject.SetActive (false);
 			button1.gameObject.SetActive (true);
 			button2.gameObject.SetActive (true);
 			button3.gameObject.SetActive (true);

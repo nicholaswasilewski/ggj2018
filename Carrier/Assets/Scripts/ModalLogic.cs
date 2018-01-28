@@ -28,7 +28,9 @@ public class ModalLogic : MonoBehaviour {
 	MasterConversation theConversation;
 
     //  Send to the Modal Panel to set up the Buttons and Functions to call
-    public void birdSelect (int birdNum) {
+	public void birdSelect (int birdNum, Texture2D portrait) {
+
+		modalPanel.iconImage.texture = portrait;
 
 		theConversation = new MasterConversation(birdNum, 1);
 		theScore = 0;
