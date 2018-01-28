@@ -7,6 +7,15 @@ public class BirdState {
 	public bool seduced;
 }
 
+public enum BirdType {
+	Turkey = 1,
+	Eagle = 2,
+	Wren = 3,
+	Parrot = 4,
+	Ostrich = 5,
+	Emu = 6,
+};
+
 public class GameStats {
 	public static GameStats instance = null;
 	public static GameStats Instance {
@@ -30,9 +39,12 @@ public class GameStats {
 	public const int BirdsToSeduce = 6;
 	public BirdState[] Birds;
 
+	public int RunCount;
+
 
 	private GameStats() {
 		Birds = InitBirds ();
+		RunCount = 0;
 	}
 
 
