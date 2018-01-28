@@ -42,7 +42,7 @@ public class Conversation {
 			break;
 		case 5:
 		// Ostrich
-			con = new Conversation("bird 5", "response 5-1", "response 5-2", "response 5-3", 3);
+			con = new Conversation("LARGE AND IN CHARGE.", "YOUR HEAD’S IN THE SAND.", "WHO’S LARGER!?", "“SHOW ME A BIGGER BIRD.", 3);
 			break;
 		case 6:
 		// EMU
