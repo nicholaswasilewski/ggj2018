@@ -8,6 +8,9 @@ public class AlliedBird : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) {
 		GameStats.Instance.KillBird (birdType);
-		Destroy (this.gameObject);
+		transform.parent = null;
+		Rigidbody rb = gameObject.GetComponent<Rigidbody> ();
+		rb.isKinematic = false;
+		rb.useGravity = true;
 	}
 }

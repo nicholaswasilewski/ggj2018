@@ -22,11 +22,13 @@ public class PlayerCharacter : MonoBehaviour {
 		
 	}
 	void OnTriggerEnter(Collider other) {
-		if (other.gameObject.layer == terrainLayer) {
+		if (other.gameObject.layer == terrainLayer || other.gameObject.layer == bulletLayer) {
 			Debug.Log ("game over");
 			ScreenFader.Instance.SetColor (Color.red);
 			ScreenFader.Instance.fadeTime = 0;
 			ScreenFader.Instance.FadeOut ();
+
+			UnityEngine.SceneManagement.SceneManager.LoadScene ("gameover");
 		}
 	}
 }
