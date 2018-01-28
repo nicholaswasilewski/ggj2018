@@ -40,7 +40,7 @@ public class ModalLogic : MonoBehaviour {
   	// add 2 points to something
 		theScore = theScore + 2;
 		NextConversation ();
-		displayManager.DisplayMessage ("Yes!");
+		displayManager.DisplayMessage ("You're my kind of bird!");
 	}
 
 	void NoAction(){

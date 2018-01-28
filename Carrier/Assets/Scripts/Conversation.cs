@@ -48,13 +48,13 @@ public class Conversation {
 			switch (convoNum) 
 			{ 
 			case 1:
-				con = new Conversation ("THREE’S A CROWD.", "GUTTER BALL", "TURKEY” (joins the party)", "ON STRIKE", 2);
+				con = new Conversation ("Turkey: What kind of jokes do you like?", "Ones that bowl me over.", "Dry humor.", "Slapstick", 1);
 				break;
 			case 2:
-				con = new Conversation("Turkey 2.", "GUTTER BALL", "TURKEY” (joins the party)", "ON STRIKE", 2);
+				con = new Conversation("Turkey: Are you into sports?", "Yes; if they involve fancy footwear.", "Yes; if they involve contact.", "No.", 1);
 				break;
 			case 3:
-				con = new Conversation("Turkey 3.", "GUTTER BALL", "TURKEY” (joins the party)", "ON STRIKE", 2);
+				con = new Conversation("Turkey: Three strikes…", "And you’re out.", "What did I say wrong?", "Is the best, especially at end.", 3);
 				break;
 			}
 			break;
@@ -62,13 +62,13 @@ public class Conversation {
 		// Eagle
 			switch (convoNum) { 
 			case 1:
-				con = new Conversation ("ROW! GAIN!", "BALDNESS IS HEREDITARY", "BALD IS BEAUTIFUL", "STARING ISN’T POLITE", 2);
+				con = new Conversation ("Eagle: ROW! GAIN!", "GET! SWOLE!", "Nah, you don’t need that stuff.", "But I’m le tired.", 2);
 				break;
 			case 2:
-				con = new Conversation ("ROW! GAIN!", "BALDNESS IS HEREDITARY", "BALD IS BEAUTIFUL", "STARING ISN’T POLITE", 2);
+				con = new Conversation ("Eagle: Leftovers for dinner?", "Not for me!", "The chicken that was left out overnight.", "Throw ‘em in the microwave!", 2);
 				break;
 			case 3:
-				con = new Conversation ("ROW! GAIN!", "BALDNESS IS HEREDITARY", "BALD IS BEAUTIFUL", "STARING ISN’T POLITE", 2);
+				con = new Conversation ("Eagle: And an evening of…?", "Baseball.", "Song.", "Meditation.", 1);
 				break;
 			}
 			break;
@@ -76,13 +76,13 @@ public class Conversation {
 		// Wren
 			switch (convoNum) {
 			case 1:
-				con = new Conversation ("YOU OWE ME.", "PAY UP", "EVICTED!", "IT’S THE FIRST.", 1);
+				con = new Conversation ("Wren: YOU OWE ME WRENT.", "It’s not the first of the month!", "How much do I owe?", "Half now, half later.", 2);
 				break;
 			case 2:
-				con = new Conversation ("YOU OWE ME.", "PAY UP", "EVICTED!", "IT’S THE FIRST.", 1);
+				con = new Conversation ("Wren: IT’S GONE UP! IT’S GONE UP!", "That’s not in the contract!", "By how much?", "Wren does that take effect?", 2);
 				break;
 			case 3:
-				con = new Conversation ("YOU OWE ME.", "PAY UP", "EVICTED!", "IT’S THE FIRST.", 1);
+				con = new Conversation ("Wren: EVICTED!!!", "How about we go get a turkey leg?", "Have mercy!", "I’ll sue!", 1);
 				break;
 			}
 			break;
@@ -90,13 +90,13 @@ public class Conversation {
 		// Parrot
 			switch (convoNum){
 			case 1:
-				con = new Conversation("ARE YOU THIRSTY?", "SUPER DUPER!", "PUT ON THE RITZ.", "EAT ANOTHER CRACKER.", 1);
+				con = new Conversation("Parrot: Do you have a favorite song?", "Puttin’ on the Ritz", "Free Bird", "Bolero", 3);
 				break;
 			case 2:
-				con = new Conversation("ARE YOU THIRSTY?", "SUPER DUPER!", "PUT ON THE RITZ.", "EAT ANOTHER CRACKER.", 1);
+				con = new Conversation("Parrot: Squawk! Do you have a favorite song?", "Salty Dog", "Fly like an Eagle", "Pachelbel’s Cannon", 3);
 				break;
 			case 3:
-				con = new Conversation("ARE YOU THIRSTY?", "SUPER DUPER!", "PUT ON THE RITZ.", "EAT ANOTHER CRACKER.", 1);
+				con = new Conversation("Parrot: Squawk! Do you have a favorite song?", "Low", "I’m like a Bird", "Rockaway Beach", 3);
 				break;
 			}
 			break;
@@ -104,13 +104,13 @@ public class Conversation {
 		// Ostrich
 			switch (convoNum) {
 			case 1:
-				con = new Conversation ("LARGE AND IN CHARGE.", "YOUR HEAD’S IN THE SAND.", "WHO’S LARGER!?", "“SHOW ME A BIGGER BIRD.", 3);
+				con = new Conversation ("Ostrich: LARGE AND IN CHARGE.", "Your head’s in the sand.", "I know someone who’s bigger.", "You’re quite impressive.", 3);
 				break;
 			case 2:
-				con = new Conversation ("LARGE AND IN CHARGE.", "YOUR HEAD’S IN THE SAND.", "WHO’S LARGER!?", "“SHOW ME A BIGGER BIRD.", 3);
+				con = new Conversation ("Ostrich: SPEEDY McFEETY.", "Drugs are bad.", "Some rollerblades would help.", "Faster than a speeding bullet.", 3);
 				break;
 			case 3:
-				con = new Conversation ("LARGE AND IN CHARGE.", "YOUR HEAD’S IN THE SAND.", "WHO’S LARGER!?", "“SHOW ME A BIGGER BIRD.", 3);
+				con = new Conversation ("Ostrich: … I just wish I could fly.", "Think of a wonderful thought!", "A jetpack will fix that.", "You’d make a great giraffe stunt double.", 1);
 				break;
 			}
 			break;
@@ -118,13 +118,13 @@ public class Conversation {
 		// EMU
 			switch (convoNum) {
 			case 1:
-				con = new Conversation ("IS MY SKIN OILY?", "I’M SO NERVOUS.", "WAITWHATWHY.", "RIGHT; NO NEED TO WORRY.", 3);
+				con = new Conversation ("Emu: *Looks around nervously*", "Is everything okay?", "You’re looking a little oily today.", "What? Where??", 1);
 				break;
 			case 2:
-				con = new Conversation ("IS MY SKIN OILY?", "I’M SO NERVOUS.", "WAITWHATWHY.", "RIGHT; NO NEED TO WORRY.", 3);
+				con = new Conversation ("Emu: *Starts shaking*", "Now you’re making ME nervous.", "Here’s a nice facial cleanser.", "How about a hug?", 3);
 				break;
 			case 3:
-				con = new Conversation ("IS MY SKIN OILY?", "I’M SO NERVOUS.", "WAITWHATWHY.", "RIGHT; NO NEED TO WORRY.", 3);
+				con = new Conversation ("Emu: *Eyes bulge*", "SAFETY IN NUMBERS.", "I’ll use the oil for tonight’s dinner!", "I’ll prepare a nice hot bath.", 3);
 				break;
 			}
 			break;
