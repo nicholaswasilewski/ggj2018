@@ -13,4 +13,7 @@ public class PigeonHit : MonoBehaviour {
 	void Update () {
 		
 	}
+
+	void OnCollisionEnter() {
+	}
 }

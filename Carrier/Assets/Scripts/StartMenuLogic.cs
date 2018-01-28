@@ -30,7 +30,7 @@ public class StartMenuLogic : MonoBehaviour {
     void StartFunction () {
       // Logic for starting game here
         displayManager.DisplayMessage ("Starting on your bird journey");
-		SceneManager.LoadScene("Main");
+		SceneManager.LoadScene("scene2");
     }
 
     void AboutFunction () {

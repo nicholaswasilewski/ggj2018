@@ -24,6 +24,12 @@ public class ScreenFader : MonoBehaviour {
 		FadeIn ();
 	}
 
+	public void SetColor(Color c) {
+		float alpha = screenColor.color.a;
+		c.a = alpha;
+		screenColor.color = c;
+	}
+
 	public void FadeOut() {
 		fadeTimer = 0;
 		fading = true;

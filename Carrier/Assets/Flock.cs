@@ -143,6 +143,9 @@ public class Flock : MonoBehaviour {
 
 		// Move flock and reset camera
 		transform.Translate(new Vector3(left * translateSpeed * Time.deltaTime, up * translateSpeed * Time.deltaTime, -100f * Time.deltaTime));
-		cameraTransform.position = new Vector3(transform.position.x, transform.position.y, transform.position.z + 25);
+		Vector3 cameraPosition = cameraTransform.position;
+		cameraPosition = new Vector3(transform.position.x, transform.position.y, transform.position.z + 25);
+		cameraTransform.position = cameraPosition;
+//		cameraTransform.forward = (transform.position - cameraTransform.position);
 	}
 }

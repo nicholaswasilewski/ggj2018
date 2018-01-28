@@ -34,12 +34,12 @@ public class ModalPanel : MonoBehaviour {
     }
 
 	void Update() {
-		if (Input.GetKeyDown(KeyCode.LeftArrow)){
+		if (Input.GetKeyDown(KeyCode.UpArrow)){
 			if (the_choice > 0 && the_choice <= 2 ){
 				the_choice = the_choice - 1;
 			}
 		}
-		if (Input.GetKeyDown(KeyCode.RightArrow)){
+		if (Input.GetKeyDown(KeyCode.DownArrow)){
 			if (the_choice >= 0 && the_choice < 2 ){
 				the_choice = the_choice + 1;
 			}
