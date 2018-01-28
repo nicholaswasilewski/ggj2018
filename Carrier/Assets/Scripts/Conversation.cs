@@ -19,30 +19,35 @@ public class Conversation {
 
 		// gets current bird number
 		int birdNum = currentBird;
-		// take that bird number and load the appropriate conversation based on it 
+		// take that bird number and load the appropriate conversation based on it
 		switch (birdNum)
 		{
 		case 1:
-			con = new Conversation("bird 1", "response 1-1", "response 1-1", "response 1-3");
+		  // Turkey
+			con = new Conversation("THREE’S A CROWD.", "GUTTER BALL", "TURKEY” (joins the party)", "ON STRIKE");
 			break;
 		case 2:
-			con = new Conversation("bird 2", "response 2-1", "response 2-2", "response 2-3");
+		// Eagle
+			con = new Conversation("ROW! GAIN!", "BALDNESS IS HEREDITARY", "BALD IS BEAUTIFUL", "STARING ISN’T POLITE");
 			break;
 		case 3:
-			con = new Conversation("bird 3", "response 3-1", "response 3-2", "response 3-3");
+		// Wren
+			con = new Conversation("YOU OWE ME.", "PAY UP", "EVICTED!", "IT’S THE FIRST.");
 			break;
 		case 4:
-			con = new Conversation("bird 4", "response 4-1", "response 4-2", "response 4-3");
+		// Parrot
+			con = new Conversation("ARE YOU THIRSTY?", "SUPER DUPER!", "PUT ON THE RITZ.", "EAT ANOTHER CRACKER.");
 			break;
 		case 5:
+		// Ostrich
 			con = new Conversation("bird 5", "response 5-1", "response 5-2", "response 5-3");
 			break;
 		case 6:
-			con = new Conversation("bird 6", "response 6-1", "response 6-2", "response 6-3");
+		// EMU
+			con = new Conversation("IS MY SKIN OILY?", "I’M SO NERVOUS.", "WAITWHATWHY.", "RIGHT; NO NEED TO WORRY.");
 			break;
 
 		}
 		return con;
 	}
 }
-
