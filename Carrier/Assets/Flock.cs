@@ -5,7 +5,7 @@ using UnityEngine;
 public class Flock : MonoBehaviour {
 	private Transform cameraTransform;
 	private Transform tiltTransform;
-	private MeshRenderer[] birds = new MeshRenderer[7];
+	public MeshRenderer[] birds = new MeshRenderer[7];
 
 	private float translateSpeed = 100f;
 	private float tiltSpeed = 100f;
@@ -28,17 +28,16 @@ public class Flock : MonoBehaviour {
 	void Start () {
 		cameraTransform = GameObject.Find("Main Camera").GetComponent<Transform>();
 		tiltTransform = GameObject.Find("FlockTilt").GetComponent<Transform>();
-		birds[0] = GameObject.Find("Bird1").GetComponent<MeshRenderer>();
-		birds[1] = GameObject.Find("Bird2").GetComponent<MeshRenderer>();
-		birds[2] = GameObject.Find("Bird3").GetComponent<MeshRenderer>();
-		birds[3] = GameObject.Find("Bird4").GetComponent<MeshRenderer>();
-		birds[4] = GameObject.Find("Bird5").GetComponent<MeshRenderer>();
-		birds[5] = GameObject.Find("Bird6").GetComponent<MeshRenderer>();
-		birds[6] = GameObject.Find("Bird7").GetComponent<MeshRenderer>();
 
-		birds[6].enabled = false;
-		birds[0].enabled = false;
-		birds[3].enabled = false;
+		InitFlock (GameStats.Instance);
+	}
+
+	void InitFlock(GameStats gameStats) {
+		BirdState[] birdStats = gameStats.Birds;
+		for (int i = 0; i < birdStats.Length; i++) {
+			BirdState birdState = birdStats[i];
+			birds[i+1].enabled = birdState.alive && birdState.seduced;
+		}
 	}
 
 	void Update () {
