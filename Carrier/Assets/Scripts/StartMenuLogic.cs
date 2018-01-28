@@ -36,7 +36,7 @@ public class StartMenuLogic : MonoBehaviour {
 
     void AboutFunction () {
       // Logic for about page here
-        displayManager.DisplayMessage ("No way, José!");
+		startMenu.StartChoice ("Andrew Davis \n Greg Weaver \n Brandon Walsh\n Nicholas Wasilewski", startAction, aboutAction);
     }
 
 }
