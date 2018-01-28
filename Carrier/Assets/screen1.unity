@@ -155,52 +155,52 @@ Prefab:
     - target: {fileID: 114693523987514944, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: displayText
-      value: 
+      value:
       objectReference: {fileID: 2102568500}
     - target: {fileID: 114165655603968966, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: question
-      value: 
+      value:
       objectReference: {fileID: 2102568499}
     - target: {fileID: 114165655603968966, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: iconImage
-      value: 
+      value:
       objectReference: {fileID: 2102568498}
     - target: {fileID: 114165655603968966, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: yesButton
-      value: 
+      value:
       objectReference: {fileID: 2102568497}
     - target: {fileID: 114165655603968966, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: noButton
-      value: 
+      value:
       objectReference: {fileID: 2102568496}
     - target: {fileID: 114165655603968966, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: maybeButton
-      value: 
+      value:
       objectReference: {fileID: 2102568495}
     - target: {fileID: 114165655603968966, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: modalPanelObject
-      value: 
+      value:
       objectReference: {fileID: 2102568494}
     - target: {fileID: 114165655603968966, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: yesHighlightObject
-      value: 
+      value:
       objectReference: {fileID: 2102568493}
     - target: {fileID: 114165655603968966, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: noHighlightObject
-      value: 
+      value:
       objectReference: {fileID: 2102568492}
     - target: {fileID: 114165655603968966, guid: ef229e3b0d73c44aabbfa4d1b794a447,
         type: 2}
       propertyPath: maybeHighlightObject
-      value: 
+      value:
       objectReference: {fileID: 2102568491}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ef229e3b0d73c44aabbfa4d1b794a447, type: 2}

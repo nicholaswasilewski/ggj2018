@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 //  This script will be updated in Part 2 of this 2 part series.
@@ -29,7 +30,7 @@ public class StartMenuLogic : MonoBehaviour {
     void StartFunction () {
       // Logic for starting game here
         displayManager.DisplayMessage ("Starting on your bird journey");
-		Application.LoadLevel("Main");
+		SceneManager.LoadScene("Main");
     }
 
     void AboutFunction () {
