@@ -22,7 +22,7 @@ public class StartMenuLogic : MonoBehaviour {
     }
 
 	public void StartThings () {
-		startMenu.StartChoice ("Dating is for the Birds", startAction, aboutAction);
+		startMenu.StartChoice ("Wing Buddies", startAction, aboutAction);
 	}
 
 
