@@ -16,6 +16,7 @@ public class ModalPanel : MonoBehaviour {
 		public GameObject maybeHighlightObject;
 
 		int the_choice = 0;
+		int response = 0;
 		UnityAction yesEvent;
 		UnityAction noEvent;
 		UnityAction maybeEvent;
@@ -60,14 +61,11 @@ public class ModalPanel : MonoBehaviour {
 		if (Input.GetKeyDown(KeyCode.Return)) {
 			//activate selection
 			Debug.Log(the_choice);
-			if (the_choice == 0 ){
+			if (the_choice == response ){
 				yesEvent();
 			}
-			if (the_choice == 1){
+			else {
 				noEvent();
-			}
-			if (the_choice == 2){
-				maybeEvent();
 			}
 			ClosePanel();
 		}
@@ -86,6 +84,7 @@ public class ModalPanel : MonoBehaviour {
 		yesButton.gameObject.GetComponentsInChildren<UnityEngine.UI.Text> () [0].text = theConversation.Answer1;
 		noButton.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer2;
 		maybeButton.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer3;
+		response = theConversation.CorrectAnswer;
         this.iconImage.gameObject.SetActive (false);
         yesButton.gameObject.SetActive (true);
         noButton.gameObject.SetActive (true);
