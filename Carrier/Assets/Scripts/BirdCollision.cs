@@ -8,7 +8,6 @@ public class BirdCollision : MonoBehaviour
 	void OnTriggerEnter (Collider other)
 	{
 //		ModalLogic.birdSelect (bird.BirdNumber);
-		Debug.Log ("Enter: " + this.gameObject.name + " with " + other.gameObject.name);
 		bird.StartDialogue ();
 	}
 }
