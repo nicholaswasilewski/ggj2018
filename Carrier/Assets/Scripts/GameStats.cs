@@ -47,6 +47,14 @@ public class GameStats {
 		RunCount = 0;
 	}
 
+	public int FriendCount() {
+		int acc = 0;
+		for (int i = 0; i < Birds.Length; i++) {
+			if (Birds[i].alive&&Birds[i].seduced)
+				acc += 1;
+		}
+		return acc;
+	}
 
 	public BirdState[] InitBirds()
 	{
