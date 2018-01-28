@@ -31,28 +31,22 @@ public class ModalLogic : MonoBehaviour {
     public void birdSelect (int birdNum) {
 
 		theConversation = new MasterConversation(birdNum, 1);
-		modalPanel.Choice(theConversation.Conversation1, YesAction, NoAction, MaybeAction, false);
+		theScore = 0;
 
-		//GameStats.Instance.SetBirdSeduction(theConversation.BirdNum, theScore>3);
+		modalPanel.Choice(theConversation.Conversation1, YesAction, NoAction, false);
 	}
 
 	void YesAction(){
   	// add 2 points to something
 		theScore = theScore + 2;
 		NextConversation ();
-		displayManager.DisplayMessage ("Yes!");
+		displayManager.DisplayMessage ("Right");
 	}
 
 	void NoAction(){
 	  // Add 0 points
 		NextConversation ();
-		displayManager.DisplayMessage ("Nope");
-	}
-
-	void MaybeAction(){
-		theScore = theScore + 1;
-		NextConversation ();
-		displayManager.DisplayMessage ("Maybe?");
+		displayManager.DisplayMessage ("Wrong");
 	}
 
 	void NextConversation() {
@@ -65,13 +59,14 @@ public class ModalLogic : MonoBehaviour {
 		switch (nextCon) {
 		case 2:
 			Debug.Log ("Made it to second switch");
-			modalPanel.Choice(theConversation.Conversation2, YesAction, NoAction, MaybeAction, false);
+			modalPanel.Choice(theConversation.Conversation2, YesAction, NoAction, false);
 			break;
 		case 3:
 			Debug.Log ("Made it to third switch");
-			modalPanel.Choice (theConversation.Conversation3, YesAction, NoAction, MaybeAction, true);
+			modalPanel.Choice (theConversation.Conversation3, YesAction, NoAction, true);
 			break;
 		default:
+			GameStats.Instance.SetBirdSeduction (theConversation.BirdNum, theScore >= 3);
 			modalPanel.ClosePanel ();
 			break;
 		}

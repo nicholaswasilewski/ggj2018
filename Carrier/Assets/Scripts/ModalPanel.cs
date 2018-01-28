@@ -7,9 +7,9 @@ public class ModalPanel : MonoBehaviour {
 
     public Text question;
     public Image iconImage;
-    public Button yesButton;
-    public Button noButton;
-    public Button maybeButton;
+    public Button button1;
+    public Button button2;
+    public Button button3;
     public GameObject modalPanelObject;
 		public GameObject yesHighlightObject;
 		public GameObject noHighlightObject;
@@ -18,7 +18,6 @@ public class ModalPanel : MonoBehaviour {
 	bool isLastTime = false;
 		int the_choice = 0;
 		int response = 0;
-		int theScore = 0; 
 		UnityAction yesEvent;
 		UnityAction noEvent;
 		UnityAction maybeEvent;
@@ -64,7 +63,7 @@ public class ModalPanel : MonoBehaviour {
 			//activate selection
 			Debug.Log("the choice: " + the_choice);
 			Debug.Log("the response: " + response);
-			if (the_choice == response ){
+			if (the_choice+1 == response ){
 				yesEvent();
 				if (isLastTime == true) {
 					ClosePanel ();
@@ -81,7 +80,7 @@ public class ModalPanel : MonoBehaviour {
 
     // Yes/No/maybe: A string, a Yes event, a No event and maybe event
     public void Choice (Conversation theConversation, UnityAction yesEvent,
-		UnityAction noEvent, UnityAction maybeEvent, bool lastTime
+		UnityAction noEvent, bool lastTime
 		) {
 		bool isLastTime = lastTime;
 		// needs to be set for the particular object
@@ -99,14 +98,14 @@ public class ModalPanel : MonoBehaviour {
 			this.maybeEvent = maybeEvent;
 			modalPanelObject.SetActive (true);
 			this.question.text = theConversation.Question;
-			yesButton.gameObject.GetComponentsInChildren<UnityEngine.UI.Text> () [0].text = theConversation.Answer1;
-			noButton.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer2;
-			maybeButton.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer3;
+			button1.gameObject.GetComponentsInChildren<UnityEngine.UI.Text> () [0].text = theConversation.Answer1;
+			button2.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer2;
+			button3.gameObject.GetComponentsInChildren<Text>()[0].text = theConversation.Answer3;
 			response = theConversation.CorrectAnswer;
 			this.iconImage.gameObject.SetActive (false);
-			yesButton.gameObject.SetActive (true);
-			noButton.gameObject.SetActive (true);
-			maybeButton.gameObject.SetActive (true);
+			button1.gameObject.SetActive (true);
+			button2.gameObject.SetActive (true);
+			button3.gameObject.SetActive (true);
 		Debug.Log (isLastTime);
 
     }

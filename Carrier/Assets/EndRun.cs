@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EndRun : MonoBehaviour {
+
+	IEnumerator WaitLoadScene (string sceneName) {
+		yield return new WaitForSeconds (1);
+		UnityEngine.SceneManagement.SceneManager.LoadScene (sceneName);
+	}
+
 	public void OnTriggerEnter(Collider other) {
 		ScreenFader.Instance.FadeOut ();
 		GameStats.Instance.RunCount += 1;
 
-		if (GameStats.Instance.RunCount >= 7) {
-			//Final score screen
-		}
+		StartCoroutine (WaitLoadScene ("results"));
 	}
 }

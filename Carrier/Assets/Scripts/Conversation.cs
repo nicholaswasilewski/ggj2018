@@ -48,13 +48,13 @@ public class Conversation {
 			switch (convoNum) 
 			{ 
 			case 1:
-				con = new Conversation ("THREE’S A CROWD.", "GUTTER BALL", "TURKEY” (joins the party)", "ON STRIKE", 2);
+				con = new Conversation ("THREE’S A CROWD.", "GUTTER BALL", "TURKEY” (joins the party)", "ON STRIKE", 1);
 				break;
 			case 2:
 				con = new Conversation("Turkey 2.", "GUTTER BALL", "TURKEY” (joins the party)", "ON STRIKE", 2);
 				break;
 			case 3:
-				con = new Conversation("Turkey 3.", "GUTTER BALL", "TURKEY” (joins the party)", "ON STRIKE", 2);
+				con = new Conversation("Turkey 3.", "GUTTER BALL", "TURKEY” (joins the party)", "ON STRIKE", 3);
 				break;
 			}
 			break;
