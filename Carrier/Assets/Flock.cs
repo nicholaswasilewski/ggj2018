@@ -38,7 +38,7 @@ public class Flock : MonoBehaviour {
 		BirdState[] birdStats = gameStats.Birds;
 		for (int i = 0; i < birdStats.Length; i++) {
 			BirdState birdState = birdStats[i];
-			birds[i+1].active = birdState.alive && birdState.seduced;
+			birds[i+1].SetActive(birdState.alive && birdState.seduced);
 		}
 	}
 
