@@ -19,7 +19,15 @@ public class DisplayEndRunStatus : MonoBehaviour {
 	}
 
 	void Start () {
-		runTitle.text = "End of run " + GameStats.Instance.RunCount.ToString ();
+		if (GameStats.Instance.RunCount >= 7) {
+			if (GameStats.Instance.FriendCount () == GameStats.BirdsToSeduce) {
+				runTitle.text = "You lived and you made lots of living friends!";
+			} else {
+				runTitle.text = "You lived, congratulations!";
+			}
+		} else {
+			runTitle.text = "End of run " + GameStats.Instance.RunCount.ToString ();
+		}
 	}
 	
 	// Update is called once per frame
@@ -32,7 +40,7 @@ public class DisplayEndRunStatus : MonoBehaviour {
 
 			string state = "Wild";
 			if (bs.alive && bs.seduced) {
-				state = "Alive";
+				state = "Friendly";
 			}
 
 			if (!bs.alive) {

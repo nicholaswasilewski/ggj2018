@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Carrier/Assets/Images/Portraits/ostrich-stub.png.meta
+guid: bacd58c03edd94e699e3770a3aebe52c
+timeCreated: 1517170481
+=======
 guid: 82d6c10c4292c4615b7db778623836a0
 timeCreated: 1517170520
+>>>>>>> aa902677113bb69b0e520181feb4f93536869525:Carrier/Assets/Images/Portraits/ostrich-stub.png.meta
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName: {}
