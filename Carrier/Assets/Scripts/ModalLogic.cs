@@ -5,31 +5,28 @@ using System.Collections;
 
 // TODO: make way to store your points
 // TODO: make way to get bird_num
+// TODO: bird photos
 
 public class ModalLogic : MonoBehaviour {
-		private Conversation conversation;
-	    private ModalPanel modalPanel;
-	    private DisplayManager displayManager;
+	private Conversation conversation;
+    private ModalPanel modalPanel;
+    private DisplayManager displayManager;
 
-	    // private UnityAction birdSelect;
-			private UnityAction myYesAction;
-	    private UnityAction myNoAction;
-	    private UnityAction myMaybeAction;
+    // private UnityAction birdSelect;
+		private UnityAction myYesAction;
+    private UnityAction myNoAction;
+    private UnityAction myMaybeAction;
 
-			int birdNum = 2;
+	public static ModalLogic Instance;
 
     void Awake () {
         modalPanel = ModalPanel.Instance ();
         displayManager = DisplayManager.Instance ();
-				// theConversation = conversation.makeConversationWithBird(BirdNum);
-        // myYesAction = new UnityAction (YesFunction);
-        // myNoAction = new UnityAction (NoFunction);
-        // myMaybeAction = new UnityAction (MaybeFunction);
-
+		Instance = this;
     }
 
     //  Send to the Modal Panel to set up the Buttons and Functions to call
-    public void birdSelect () {
+    public void birdSelect (int birdNum) {
 		Conversation theConversation = Conversation.makeConversationWithBird(birdNum);
 		modalPanel.Choice(theConversation, YesAction, NoAction, MaybeAction);
 	}

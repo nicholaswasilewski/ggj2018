@@ -1,7 +1,55 @@
 This project uses the following items from Poly (http://poly.google.com):
 
+Title: Cactus wren
+Author: Poly by Google
+URL: https://poly.google.com/view/6b7Ul6MeLrJ
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Eagle
+Author: Robert Mirabelle
+URL: https://poly.google.com/view/1Z5L1v0bfu7
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Emu
+Author: Poly by Google
+URL: https://poly.google.com/view/dVhJSddeK67
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: JACKIE'S PHOENIX
+Author: John shideler
+URL: https://poly.google.com/view/bnaUiSIM4HI
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
 Title: Mourning dove
 Author: Poly by Google
 URL: https://poly.google.com/view/1cF8DTp2sAi
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Ostrich
+Author: Poly by Google
+URL: https://poly.google.com/view/1LtIviy4khn
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Parrot
+Author: Poly by Google
+URL: https://poly.google.com/view/dfNjMLtO0pd
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Peacock
+Author: Heinrich Van Der Merwe
+URL: https://poly.google.com/view/5KT2QOLTbJm
+License: Creative Commons CC-BY
+https://creativecommons.org/licenses/by/3.0/legalcode
+
+Title: Turkey
+Author: Poly by Google
+URL: https://poly.google.com/view/bMbD7yiAnML
 License: Creative Commons CC-BY
 https://creativecommons.org/licenses/by/3.0/legalcode
