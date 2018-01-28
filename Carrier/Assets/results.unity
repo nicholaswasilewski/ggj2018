@@ -276,6 +276,7 @@ GameObject:
   - component: {fileID: 536451824}
   - component: {fileID: 536451823}
   - component: {fileID: 536451822}
+  - component: {fileID: 536451826}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -346,6 +347,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &536451826
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 536451821}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &897693217
 GameObject:
   m_ObjectHideFlags: 0
@@ -982,7 +1063,15 @@ MonoBehaviour:
   - {fileID: 1766792199}
   - {fileID: 167209754}
   - {fileID: 1903556293}
-  timePerStatus: 0.25
+  birdSounds:
+  - {fileID: 8300000, guid: 556e64a9d2844455684af755649affaa, type: 3}
+  - {fileID: 8300000, guid: 04c709264b4ab41a78b5c5c6e00b0557, type: 3}
+  - {fileID: 8300000, guid: 81cceeb8a532148a3bdb1da1f8bdb079, type: 3}
+  - {fileID: 8300000, guid: 6d68acf37e2a745f285786ed4f296e87, type: 3}
+  - {fileID: 8300000, guid: c92dd6ab06a484eaebb6f67ce30b00d0, type: 3}
+  - {fileID: 8300000, guid: eb9f8116ec93d4fed832ed5472202182, type: 3}
+  source: {fileID: 536451826}
+  timePerStatus: 0.5
 --- !u!1 &1766792197
 GameObject:
   m_ObjectHideFlags: 0

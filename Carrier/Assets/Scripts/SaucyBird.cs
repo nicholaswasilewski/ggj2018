@@ -6,6 +6,8 @@ public class SaucyBird : MonoBehaviour {
 
 	public int BirdNumber;
 	public Texture2D Portrait;
+	public AudioClip musicClip;
+	public AudioClip squawk;
 
 	void Start () {
 	}
@@ -14,10 +16,19 @@ public class SaucyBird : MonoBehaviour {
 		// Translate
 		Vector3 translation = new Vector3(0, 0, forwardSpeed)*Time.deltaTime;
 		transform.Translate(translation);
-//		cameraTransform.Translate(translation);
 	}
 
 	public void StartDialogue(){
+
+		if (MusicPlayer.Instance != null && musicClip != null) {
+			MusicPlayer.Instance.audioSource.clip = musicClip;
+			MusicPlayer.Instance.audioSource.Play ();
+		}
+
+		if (MusicPlayer.Instance != null && squawk != null) {
+			MusicPlayer.Instance.audioSource.PlayOneShot (squawk);
+		}
+
 		ModalLogic.Instance.birdSelect (BirdNumber, Portrait);
 	}
 }
