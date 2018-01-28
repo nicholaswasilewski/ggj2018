@@ -5,6 +5,7 @@ using UnityEngine;
 public class SaucyBird : MonoBehaviour {
 
 	public int BirdNumber;
+	public UnityEngine.UI.Image Portrait;
 
 	void Start () {
 	}
