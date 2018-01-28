@@ -44,7 +44,7 @@ public class Flock : MonoBehaviour {
 	}
 
 	void Update () {
-
+		float sideSpeed = this.sideSpeed;
 		if (!rolling) {
 			if (Input.GetKeyDown (LeftKey)) {
 				if (Time.time - lastLeftTime <= rollDetectionTime) {
@@ -67,6 +67,7 @@ public class Flock : MonoBehaviour {
 			}
 		} else {
 			//			Debug.Log ("Rolling, Roll Direction: " + rollDirection + ",  RollTime: " + rollTime);
+			sideSpeed = sideSpeed*2;
 			rollTime += Time.deltaTime;
 			Vector3 angles = tiltTransform.localEulerAngles;
 			if (rollTime >= targetRollTime) {
@@ -75,7 +76,6 @@ public class Flock : MonoBehaviour {
 				angles.z = 0.0f;
 			} else {
 				angles.z = Mathf.Lerp (0.0f, rollDirection, rollTime / targetRollTime);
-				Debug.Log ("Roll Time: " + rollTime + ", " +angles.z);
 			}
 			tiltTransform.localEulerAngles = angles;
 		}

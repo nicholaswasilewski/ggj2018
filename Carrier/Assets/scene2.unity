@@ -8481,7 +8481,13 @@ Prefab:
       propertyPath: squawk
       value: 
       objectReference: {fileID: 8300000, guid: 04c709264b4ab41a78b5c5c6e00b0557, type: 3}
-    m_RemovedComponents: []
+    - target: {fileID: 65516790712834966, guid: 205ec923489b84ed2ab349788edbc73c,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 96.9
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 64856029500668436, guid: 205ec923489b84ed2ab349788edbc73c, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 205ec923489b84ed2ab349788edbc73c, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &2088161972 stripped
